@@ -12,7 +12,7 @@ app = Flask(app_name)
 def get_api():
     curr_time = datetime.utcnow()
     logger.error("GET API is called @ %s", curr_time)
-    return f"GET API CALLED @ {curr_time}"
+    return f"GET API CALLED @ : {curr_time}"
 
 
 @app.route("/check_post", methods=["POST"])
